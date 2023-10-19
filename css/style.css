@@ -1,0 +1,62 @@
+nav {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0c8195;
+}
+.navbarLogo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.navbarLogo h3 {
+  font-size: 32px;
+  margin-left: 5px;
+  font-family: "Manrope";
+  text-transform: capitalize;
+  color: #fff;
+  transition: 0.5s;
+}
+.navbarLogo h3:hover {
+  color: #f1c111;
+}
+.menu {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: "Lora";
+  color: #fff;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+.menu a:hover {
+  color: #f1c111;
+}
+.menu div {
+  padding-left: 10%;
+}
+.contactButton {
+  margin-left: 50px;
+  padding: 10px 30px;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-family: "Lora";
+  color: #f1c111;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 2px solid #f1c111;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.contactButton:hover {
+  background-color: #f1c111;
+  color: #fff;
+}

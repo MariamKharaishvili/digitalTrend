@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Karla";
+  src: url("../FONTS/Karla-Regular.eot");
+  src: url("../FONTS/Karla-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../FONTS/Karla-Regular.woff2") format("woff2"),
+    url("../FONTS/Karla-Regular.woff") format("woff"),
+    url("../FONTS/Karla-Regular.ttf") format("truetype"),
+    url("../FONTS/Karla-Regular.svg#Karla-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../FONTS/Lora-Regular.eot");
+  src: url("../FONTS/Lora-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../FONTS/Lora-Regular.woff2") format("woff2"),
+    url("../FONTS/Lora-Regular.woff") format("woff"),
+    url("../FONTS/Lora-Regular.ttf") format("truetype"),
+    url("../FONTS/Lora-Regular.svg#Lora-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../FONTS/Manrope-Medium.eot");
+  src: url("../FONTS/Manrope-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../FONTS/Manrope-Medium.woff2") format("woff2"),
+    url("../FONTS/Manrope-Medium.woff") format("woff"),
+    url("../FONTS/Manrope-Medium.ttf") format("truetype"),
+    url("../FONTS/Manrope-Medium.svg#Manrope-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
