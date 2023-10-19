@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* navigation styles  */
 nav {
   width: 100%;
@@ -80,7 +83,7 @@ nav {
 .bannerTxtWrapper h2 {
   font-size: 40px;
   letter-spacing: 2px;
-  line-height: 60px;
+  line-height: 1.5;
   color: #fff;
   font-weight: 600;
   font-family: "Karla";
@@ -135,14 +138,14 @@ nav {
 }
 .studioTxtWrapper h3 {
   font-size: 32px;
-  line-height: 50px;
+  line-height: 1.5;
   font-family: "Lora";
   color: black;
 }
 .studioTxtWrapper p {
   margin: 8% 0%;
   font-family: "Karla";
-  line-height: 30px;
+  line-height: 1.5;
   font-size: 20px;
   color: #666262;
 }
@@ -164,13 +167,14 @@ nav {
 
 /* our work section  */
 #ourWorks {
+  padding-bottom: 8%;
   background-color: #f0f8ff;
 }
 #ourWorks h2 {
   text-align: center;
-  padding: 10% 0% 5% 0%;
+  padding: 10% 0% 5%;
   font-size: 32px;
-  line-height: 50px;
+  line-height: 1.2;
   font-family: "Lora";
   color: black;
 }
@@ -224,5 +228,47 @@ nav {
 }
 /* our work section  */
 /* clients section  */
+.clientsSection {
+  width: 100%;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clientsImg {
+  width: 30%;
+}
+.clientsImg img {
+  width: 100%;
+}
+.clientTxtWrappers {
+  width: 25%;
+}
+.clientTxtWrappers h6 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #909090;
+  font-family: "Manrope";
+}
+.clientTxtWrappers p {
+  margin: 10% 0% 5%;
+  font-size: 25px;
+  font-family: "Karla";
+  line-height: 1.7;
+  color: #22262a;
+  font-weight: bold;
+}
 
+.clientsName {
+  font-size: 20px;
+  font-family: "Karla";
+  color: #f1c111;
+  text-transform: capitalize;
+}
+.divider,
+.position {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #adabab;
+}
 /* clients section  */
