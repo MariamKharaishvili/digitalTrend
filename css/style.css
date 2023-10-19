@@ -163,11 +163,66 @@ nav {
 /* studio section  */
 
 /* our work section  */
+#ourWorks {
+  background-color: #f0f8ff;
+}
 #ourWorks h2 {
+  text-align: center;
+  padding: 10% 0% 5% 0%;
   font-size: 32px;
   line-height: 50px;
   font-family: "Lora";
   color: black;
 }
-
+.cardBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.cardsWrapper {
+  width: 40%;
+}
+.card {
+  background-image: url(../images/ourWorksImg1.jpg);
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 8%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.card button {
+  width: 90%;
+  background-color: #fff;
+  color: #057a8d;
+  font-family: "Karla";
+  border: none;
+  padding: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: -30px;
+  transition: 0.5s;
+}
+.card:hover button {
+  opacity: 1;
+  bottom: 0;
+  visibility: visible;
+  cursor: pointer;
+}
+.cardBox .cardsWrapper:nth-child(2) .card {
+  background-image: url(../images/ourWorksImg2.jpg);
+}
 /* our work section  */
+/* clients section  */
+
+/* clients section  */
