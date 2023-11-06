@@ -6,14 +6,13 @@ nav {
   width: 100%;
   padding: 2%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #0c8195;
 }
 .navbarLogo {
   width: 30%;
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: 0.5s;
 }
 .navbarLogo h3 {
@@ -28,11 +27,12 @@ nav {
   color: #f1c111;
 }
 .menu {
-  width: 50%;
+  width: 70%;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
-.menu a {
+.menu div a {
   font-size: 20px;
   letter-spacing: 2px;
   font-family: "Lora";
@@ -40,11 +40,8 @@ nav {
   text-transform: capitalize;
   transition: 0.5s;
 }
-.menu a:hover {
+.menu div a:hover {
   color: #f1c111;
-}
-.menu div {
-  padding-left: 10%;
 }
 .contactButton {
   margin-left: 50px;
@@ -72,13 +69,33 @@ nav {
   height: 80vh;
   background-image: linear-gradient(170deg, #057a8d 64%, white 30%);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
+/* @keyframes left {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 400px;
+  }
+}
+@keyframes right {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 400px;
+  }
+} */
+
 .bannerTxtWrapper {
-  width: 25%;
-  /* animation-name: banner;
-  animation-duration: 4s; */
+  width: 50%;
+  padding: 50px;
+  text-align: center;
+  animation-fill-mode: forwards;
+  animation-name: left;
+  animation-duration: 5s;
 }
 .bannerTxtWrapper h2 {
   font-size: 40px;
@@ -89,10 +106,13 @@ nav {
   font-family: "Karla";
 }
 .bannerimg {
-  width: 30%;
+  width: 50%;
+  animation-name: right;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
 .bannerimg img {
-  width: 100%;
+  max-width: 100%;
   /* animation-name: banner2;
   animation-duration: 5s; */
 }
@@ -118,7 +138,6 @@ nav {
   padding-left: 10px;
 }
 .bannerPhone {
-  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,12 +148,13 @@ nav {
 #studio {
   width: 100%;
   margin-top: 5%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 .studioTxtWrapper {
   width: 30%;
+  margin: 0 auto;
 }
 .studioTxtWrapper h3 {
   font-size: 32px;
@@ -155,6 +175,7 @@ nav {
 }
 .studioImg {
   width: 30%;
+  margin: 0 auto;
 }
 .studioImg img {
   width: 100%;
@@ -244,7 +265,8 @@ nav {
 .clientTxtWrappers {
   width: 25%;
 }
-.clientTxtWrappers h6 {
+.clientTxtWrappers h6,
+footer h6 {
   font-size: 18px;
   text-transform: uppercase;
   color: #909090;
@@ -272,3 +294,136 @@ nav {
   color: #adabab;
 }
 /* clients section  */
+/* footer section  */
+footer {
+  width: 100%;
+  padding: 10%;
+  background-color: #171819;
+}
+.footerBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.creative {
+  width: 40%;
+}
+.creative h5 {
+  font-size: 45px;
+  color: #fff;
+  font-family: "Karla";
+}
+.footerTxtWrapper {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.footerContact {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerContact a,
+.footerStudio a,
+.copyright {
+  font-size: 20px;
+  color: #666262;
+  font-family: "Karla";
+  display: block;
+}
+.footerStudio {
+  width: 50%;
+}
+.phoneNumber,
+.email {
+  display: flex;
+  align-items: center;
+}
+.address {
+  display: flex;
+  align-items: flex-start;
+}
+.phoneNumber,
+.address {
+  margin: 30px 0 10px;
+}
+
+.copyrightSocials {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+.copyright,
+.socialIcons,
+.contactStories {
+  width: 30%;
+}
+.socialIcons img {
+  margin-left: 2%;
+}
+.contactStories a {
+  font-size: 18px;
+  color: #666262;
+  padding-left: 5%;
+  font-family: "Manrope";
+}
+/* footer section  */
+
+@media screen and (max-width: 1223px) {
+  .clientTxtWrappers p {
+    font-size: 20px;
+  }
+  .creative h5 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1042px) {
+  .bannerTxtWrapper h2 {
+    font-size: 35px;
+  }
+  .bannerButton {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  .studioTxtWrapper h3 {
+    font-size: 25px;
+  }
+  .studioTxtWrapper p {
+    line-height: normal;
+  }
+  #ourWorks h2 {
+    font-size: 28px;
+  }
+  .clientsSection {
+    margin-bottom: 20px;
+  }
+  .clientTxtWrappers p {
+    font-size: 15px;
+  }
+  .cardBox {
+    flex-direction: column;
+  }
+  .cardsWrapper {
+    width: 80%;
+    margin: 0px auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footerBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .creative h5 {
+    margin-bottom: 50px;
+  }
+  .studioTxtWrapper {
+    width: 80%;
+    text-align: center;
+  }
+  .copyrightSocials {
+    flex-direction: column;
+    margin: 20px;
+  }
+}
